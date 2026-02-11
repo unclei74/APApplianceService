@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-label="Washing Machines repair">
-  <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#0b3c5d" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#e94b3c" stop-opacity="0.10"/>
-    </linearGradient>
-  </defs>
-  <rect width="520" height="360" rx="28" fill="#ffffff"/>
-  <rect x="18" y="18" width="484" height="324" rx="22" fill="url(#bg)"/>
-  <rect x="145" y="78" width="230" height="210" rx="20" fill="#0b3c5d" opacity="0.15"/>
-  <rect x="168" y="102" width="184" height="18" rx="9" fill="#e94b3c" opacity="0.9"/>
-  <rect x="168" y="134" width="184" height="120" rx="18" fill="#0b3c5d" opacity="0.10"/>
-  <circle cx="210" cy="270" r="10" fill="#0b3c5d" opacity="0.55"/>
-  <circle cx="310" cy="270" r="10" fill="#0b3c5d" opacity="0.55"/>
-  <path d="M96 120c11-11 29-11 40 0l-14 14 18 18 14-14c11 11 11 29 0 40l-12 12-32-32-12 12c-4 4-9 4-13 0l-5-5c-4-4-4-9 0-13l12-12-9-9 13-13z" fill="#ffd166" opacity="0.95"/>
-  <text x="260" y="330" text-anchor="middle" font-family="system-ui,Segoe UI,Roboto,Arial" font-size="20" fill="#0b3c5d" font-weight="800">Washing Machines</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360"><defs><linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#0b3c5d"/><stop offset="1" stop-color="#0a2f48"/></linearGradient></defs><rect width="520" height="360" fill="#f5f7fa"/><rect x="130" y="40" width="260" height="280" rx="22" fill="url(#b)"/><rect x="155" y="65" width="210" height="28" rx="14" fill="#ffffff" opacity=".18"/><circle cx="260" cy="205" r="85" fill="#ffffff" opacity=".18"/><circle cx="260" cy="205" r="64" fill="#ffffff" opacity=".92"/><path d="M210 205c22-30 68-30 100 0-22 30-68 30-100 0Z" fill="#0b3c5d" opacity=".12"/><text x="260" y="340" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#0b3c5d">Washing Machine Repair</text></svg>
