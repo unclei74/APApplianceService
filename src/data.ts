@@ -3,8 +3,8 @@ export const SITE = {
   city: "Las Vegas, NV",
   phone: "123-456-7890",
   phoneTel: "1234567890",
-  email: "service@apapplianceservice.com",
-  hours: "Mon–Sat 8:00 AM – 5:00 PM",
+  email: "apappliancelv@gmail.com",
+  hours: "Mon–Sat 9:00 AM – 5:00 PM",
 } as const;
 
 export const BASE = import.meta.env.BASE_URL;
