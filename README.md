@@ -1,27 +1,40 @@
-# AP Appliance Service — React + TypeScript (Vite)
+import { BRANDS, SERVICES, SITE } from "../data";
 
-All images are included under `public/` and referenced via `import.meta.env.BASE_URL` to avoid broken paths on Cloudflare.
+export default function Repairs() {
+  return (
+    <main className="container">
+      <div className="sectionTitle">
+        <h2>Repairs</h2>
+        <p>
+          <strong>Repairing all major Appliances and Brands.</strong> We specialize in a wide range of appliances from top brands,
+          and our professional, experienced technicians focus on honest diagnostics, clear communication, and quality repairs.
+          Call or text us at <a href={`tel:${SITE.phoneTel}`}>{SITE.phone}</a>.
+        </p>
+      </div>
 
-## Local dev
-```bash
-npm install
-npm run dev
-```
+      <section className="grid twoListGrid">
+        <article className="card">
+          <h3>Appliances We Repair</h3>
+          <ul className="twoColBullets">
+            {SERVICES.map((s) => (
+              <li key={s.name}>{s.name}</li>
+            ))}
+          </ul>
+        </article>
 
-## Build
-```bash
-npm run build
-```
-Build output: `dist/`
+        <article className="card">
+          <h3>Brands We Service</h3>
+          <ul className="twoColBullets">
+            {BRANDS.map((b) => (
+              <li key={b.name}>{b.name}</li>
+            ))}
+          </ul>
+        </article>
+      </section>
 
-## Deploy to Cloudflare Workers (Wrangler)
-```bash
-npm run build
-npx wrangler deploy
-```
-This uses `wrangler.jsonc` + an assets binding to serve `dist/` and provides SPA fallback.
-
-## Deploy to Cloudflare Pages
-- Build command: `npm run build`
-- Output directory: `dist`
-- SPA fallback is included via `public/_redirects`
+      <div className="note">
+        Need service today? Text or call <a href={`tel:${SITE.phoneTel}`}>{SITE.phone}</a> during <strong>{SITE.hours}</strong>.
+      </div>
+    </main>
+  );
+}

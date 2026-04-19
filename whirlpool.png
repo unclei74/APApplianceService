@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" role="img" aria-label="AP Appliance Service logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b3c5d"/>
+      <stop offset="1" stop-color="#0a2f48"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="160" rx="24" fill="url(#g)"/>
+  <g transform="translate(28,26)">
+    <rect x="0" y="14" width="78" height="96" rx="14" fill="#ffffff" opacity="0.95"/>
+    <rect x="12" y="28" width="54" height="10" rx="5" fill="#e94b3c"/>
+    <circle cx="24" cy="88" r="6" fill="#0b3c5d"/>
+    <circle cx="54" cy="88" r="6" fill="#0b3c5d"/>
+    <path d="M106 34c9-9 24-9 33 0l-12 12 14 14 12-12c9 9 9 24 0 33l-10 10-26-26-10 10c-3 3-7 3-10 0l-4-4c-3-3-3-7 0-10l10-10-7-7 10-10z" fill="#ffffff" opacity="0.95"/>
+    <g transform="translate(190,18)" fill="#ffd166" opacity="0.95">
+      <path d="M20 0l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/>
+      <path d="M58 24l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+    </g>
+  </g>
+  <text x="280" y="72" text-anchor="middle" font-family="system-ui,Segoe UI,Roboto,Arial" font-size="34" fill="#ffffff" font-weight="800">AP Appliance Service</text>
+  <text x="280" y="110" text-anchor="middle" font-family="system-ui,Segoe UI,Roboto,Arial" font-size="16" fill="#ffffff" opacity="0.9">Appliance Repair • Las Vegas, NV</text>
+</svg>
