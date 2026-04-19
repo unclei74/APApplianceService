@@ -1,28 +1,13 @@
-import { SERVICES, SITE, imgService } from "../data";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./styles.css";
 
-export default function Services() {
-  return (
-    <main className="container">
-      <div className="sectionTitle">
-        <h2>Services</h2>
-        <p>Professional Appliance Repair for the most common household units.</p>
-      </div>
-
-      <section className="grid">
-        {SERVICES.map((s) => (
-          <article key={s.name} className="card">
-            <div className="iconBox">
-              <img src={imgService(s.file)} alt={s.alt} />
-            </div>
-            <h3>{s.name}</h3>
-            <p>Diagnosis, parts replacement, and performance testing. Call us during <strong>{SITE.hours}</strong>.</p>
-          </article>
-        ))}
-      </section>
-
-      <div className="note">
-        <strong>Tip:</strong> If you can, have the model number ready when you call—it helps us bring the right parts and speed up the repair.
-      </div>
-    </main>
-  );
-}
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
