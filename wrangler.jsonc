@@ -1,5 +1,5 @@
 {
-  "name": "ap-appliance-service",
+  "name": "apapplianceservice02",
   "main": "src/index.ts",
   "compatibility_date": "2026-02-07",
   "assets": {
