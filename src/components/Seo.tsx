@@ -18,6 +18,7 @@ export function Seo() {
     const meta = pageMeta(pathname);
     document.title = meta.title;
     setHead('meta[name="description"]', () => Object.assign(document.createElement("meta"), { name: "description" }), "content", meta.description);
+    setHead('meta[name="keywords"]', () => Object.assign(document.createElement("meta"), { name: "keywords" }), "content", meta.keywords.join(", "));
     setHead('link[rel="canonical"]', () => Object.assign(document.createElement("link"), { rel: "canonical" }), "href", canonicalUrl(pathname));
   }, [pathname]);
   return null;

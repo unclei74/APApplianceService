@@ -11,6 +11,8 @@ export function Footer() {
             Hours: {SITE.hours} • Phone: <a href={`tel:${SITE.phoneTel}`}>{SITE.phone}</a> • Email:{" "}
             <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
           </span>
+          <br />
+          <span className="tiny">Appliance repair in Las Vegas, Henderson &amp; North Las Vegas, NV</span>
         </div>
         <div className="tiny">© {year} {SITE.name}. All rights reserved.</div>
       </div>

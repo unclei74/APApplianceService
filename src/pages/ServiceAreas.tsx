@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type * as Leaflet from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { BASE, SERVICE_AREAS, SITE } from "../data";
+import { BASE, NEIGHBORHOODS, SERVICE_AREAS, SITE } from "../data";
 
 // Zip codes with no mapped boundary (PO box / single-delivery zips) are shown as points.
 const ZIP_POINTS: Record<string, [number, number]> = {
@@ -112,10 +112,11 @@ export default function ServiceAreas() {
   return (
     <main className="container">
       <div className="sectionTitle">
-        <h1>Appliance Repair Service Areas</h1>
+        <h1>Appliance Repair in Las Vegas, Henderson & North Las Vegas</h1>
         <p>
-          We provide in-home appliance repair across Las Vegas, Henderson, and North Las Vegas. Find your zip code below or
-          call <a href={`tel:${SITE.phoneTel}`}>{SITE.phone}</a> to confirm coverage.
+          We provide in-home appliance repair across Las Vegas, Henderson, and North Las Vegas, including the{" "}
+          {NEIGHBORHOODS.join(", ")} areas. Find your zip code below or call{" "}
+          <a href={`tel:${SITE.phoneTel}`}>{SITE.phone}</a> to confirm coverage.
         </p>
       </div>
 
