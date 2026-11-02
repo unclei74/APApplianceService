@@ -10,16 +10,64 @@ export const SITE = {
 export const BASE = import.meta.env.BASE_URL;
 
 export const SERVICES = [
-  { name: "Washing Machines", file: "washer.png", alt: "Washing machine repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Dryers", file: "dryer.png", alt: "Dryer repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Ovens", file: "oven.png", alt: "Oven repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Refrigerators", file: "fridge.png", alt: "Refrigerator repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Dishwashers", file: "dishwasher.png", alt: "Dishwasher repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Freezers", file: "freezer.png", alt: "Freezer repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Microwaves", file: "microwave.png", alt: "Microwave repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Ice Makers", file: "icemaker.png", alt: "Ice maker repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
-  { name: "Stoves", file: "stove.png", alt: "Stove repair and diagnostics in Las Vegas, NV by AP Appliance Service" },
+  {
+    name: "Washing Machines",
+    file: "washer.png",
+    alt: "Washing machine repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Washer repair for front-load and top-load machines that won't spin, won't drain, leak, or shake.",
+  },
+  {
+    name: "Dryers",
+    file: "dryer.png",
+    alt: "Dryer repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Gas and electric dryer repair when your dryer won't heat, takes too long to dry, squeals, or won't start.",
+  },
+  {
+    name: "Ovens",
+    file: "oven.png",
+    alt: "Oven repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Oven repair for wall ovens and ranges that won't heat, heat unevenly, or show error codes.",
+  },
+  {
+    name: "Refrigerators",
+    file: "fridge.png",
+    alt: "Refrigerator repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Refrigerator repair when your fridge isn't cooling, is leaking water, or making loud noises, including built-in and French-door models.",
+  },
+  {
+    name: "Dishwashers",
+    file: "dishwasher.png",
+    alt: "Dishwasher repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Dishwasher repair for units that won't drain, leave dishes dirty, leak, or won't start.",
+  },
+  {
+    name: "Freezers",
+    file: "freezer.png",
+    alt: "Freezer repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Upright and chest freezer repair when your freezer isn't freezing, frosts up, or runs constantly.",
+  },
+  {
+    name: "Microwaves",
+    file: "microwave.png",
+    alt: "Microwave repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Over-the-range and built-in microwave repair for units that won't heat, spark, or won't turn on.",
+  },
+  {
+    name: "Ice Makers",
+    file: "icemaker.png",
+    alt: "Ice maker repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Ice maker repair when your refrigerator stops making ice, leaks, or makes small or hollow cubes.",
+  },
+  {
+    name: "Stoves",
+    file: "stove.png",
+    alt: "Stove repair and diagnostics in Las Vegas, NV by AP Appliance Service",
+    desc: "Stove, range, and cooktop repair for gas or electric burners that won't light or heat.",
+  },
 ] as const;
+
+// Neighborhoods inside the Las Vegas zip codes listed in SERVICE_AREAS.
+export const NEIGHBORHOODS = ["Summerlin", "Spring Valley", "Enterprise", "Paradise"] as const;
 
 export const BRANDS = [
   { name: "Amana", file: "amana.png" },
